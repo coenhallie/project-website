@@ -20,9 +20,11 @@ module.exports = {
   /*
   ** Build configuration
   */
-  vendor: ['vue-particles', 'buefy'],
+  modules: [
+    '@nuxtjs/bulma'
+  ],
+  vendor: ['vue-particles'],
   plugins: [
-    { src: '~/plugins/buefy'},
     { src: '~/plugins/vue-particles', ssr: false}
     ],
   build: {

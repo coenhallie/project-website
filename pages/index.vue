@@ -1,12 +1,12 @@
 <template>
-  <section class="container">
+  <section id="home">
     <div class="wrap-banner">
       <div class="main-title">
         <h1 class="title">
-          project-website
+          Coen Hallie
         </h1>
         <h2 class="subtitle">
-          my portfolio website
+          Full Stack Developer
         </h2>
         <div class="links">
           <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
@@ -14,12 +14,12 @@
         </div>
       </div>
         <vue-particles
-          color="#ddd"
+          color="#e6ccff"
           :particleOpacity="0.7"
           :particlesNumber="80"
           shapeType="circle"
           :particleSize="5"
-          linesColor="#ddd"
+          linesColor="#e6ccff"
           :linesWidth="2"
           :lineLinked="true"
           :lineOpacity="0.4"
@@ -45,7 +45,15 @@ export default {
 
 <style>
 
-  .container {
+  #home {
+    height: 100%;
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50
+  }
+  .wrap-banner {
     text-align:center;
     -ms-flex-align: center;
     -webkit-box-align: center;
@@ -56,12 +64,12 @@ export default {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height:auto;
   }
   .main-title {
     color:#000;
     z-index:999;
   }
+
   #particles-js {
     background-size: cover;
     position: absolute;
@@ -69,8 +77,6 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-  }
-  .wrap-banner {
   }
 
   .title {
