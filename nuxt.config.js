@@ -21,7 +21,8 @@ module.exports = {
   ** Build configuration
   */
   modules: [
-    '@nuxtjs/bulma'
+    '@nuxtjs/bulma',
+    '@nuxtjs/font-awesome'
   ],
   vendor: ['vue-particles'],
   plugins: [

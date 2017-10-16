@@ -1,36 +1,53 @@
 <template>
-  <section id="home">
-    <div class="wrap-banner">
-      <div class="main-title">
-        <h1 class="title">
+  <section class="hero is-fullheight">
+    <div class="hero-body">
+      <div class="home-text content">
+        <div class="home-content">
+          <div class="has-text-right">
+            <span class="icon is-large">
+            <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+            </span>
+            <span class="icon is-large">
+            <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+            </span>
+          </div>
+          <h1 class="title">
           Coen Hallie
-        </h1>
+          </h1>
         <h2 class="subtitle">
           Full Stack Developer
         </h2>
-        <div class="links">
-          <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-          <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+        </div>
+        <div class="columns has-text-centered">
+          <div class="column">
+          <a class="button is-white">Projects</a>
+          </div>
+          <div class="column">
+            <a class="button is-white">Blog</a>
+          </div>
+          <div class="column">
+          <a class="button is-white">Contact me</a>
+          </div>
         </div>
       </div>
-        <vue-particles
-          color="#e6ccff"
-          :particleOpacity="0.7"
-          :particlesNumber="80"
-          shapeType="circle"
-          :particleSize="5"
-          linesColor="#e6ccff"
-          :linesWidth="2"
-          :lineLinked="true"
-          :lineOpacity="0.4"
-          :linesDistance="150"
-          :moveSpeed="3"
-          :hoverEffect="true"
-          hoverMode="grab"
-          :clickEffect="true"
-          clickMode="push"
-        >
-        </vue-particles>
+      <vue-particles
+        color="#e6ccff"
+        :particleOpacity="0.7"
+        :particlesNumber="80"
+        shapeType="circle"
+        :particleSize="6"
+        linesColor="#e6ccff"
+        :linesWidth="3"
+        :lineLinked="true"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="2"
+        :hoverEffect="true"
+        hoverMode="grab"
+        :clickEffect="true"
+        clickMode="push"
+      >
+      </vue-particles>
     </div>
   </section>
 </template>
@@ -43,28 +60,21 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
-  #home {
-    height: 100%;
-    font-family: Avenir,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50
-  }
-  .wrap-banner {
-    text-align:center;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
+.home-text {
+  background-color:#fff;
+  box-shadow: 0px 30px 40px rgba(0,0,0,.1);
+  z-index:999;
+  margin:auto auto;
+  padding:30px 20px 30px 20px;
+  width:50%
+}
+
+.container {
+  z-index:999;
+  text-align:center;
+}
   .main-title {
     color:#000;
     z-index:999;
@@ -81,15 +91,15 @@ export default {
 
   .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  font-weight: 300;
-  font-size: 100px;
+  font-weight: 500;
+  font-size: 50px;
   color: #35495e;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
-  font-size: 42px;
+  font-size: 34px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
