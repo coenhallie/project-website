@@ -29,9 +29,9 @@ module.exports = {
   ],
   vendor: ['vue-particles', 'vue-typer'],
   plugins: [
-    { src: '~/plugins/vue-particles', ssr: false},
-    { src: '~/plugins/vue-typer', ssr: false}
-    ],
+    { src: '~/plugins/vue-particles', ssr: false },
+    { src: '~/plugins/vue-typer', ssr: false }
+  ],
   build: {
     /*
     ** Run ESLint on save
