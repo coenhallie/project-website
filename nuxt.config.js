@@ -24,9 +24,13 @@ module.exports = {
     '@nuxtjs/bulma',
     '@nuxtjs/font-awesome'
   ],
-  vendor: ['vue-particles'],
+  css: [
+    'assets/main.css'
+  ],
+  vendor: ['vue-particles', 'vue-typer'],
   plugins: [
-    { src: '~/plugins/vue-particles', ssr: false}
+    { src: '~/plugins/vue-particles', ssr: false},
+    { src: '~/plugins/vue-typer', ssr: false}
     ],
   build: {
     /*

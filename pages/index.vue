@@ -15,12 +15,12 @@
           Coen Hallie
           </h1>
         <h2 class="subtitle">
-          Full Stack Developer
+          <vue-typer :text='["Full Stack Developer", "Experienced VueJS designer"]'></vue-typer>
         </h2>
         </div>
         <div class="columns has-text-centered">
           <div class="column">
-          <a class="button is-white">Projects</a>
+          <nuxt-link class="button is-white" to="/portfolio">Portfolio</nuxt-link>
           </div>
           <div class="column">
             <a class="button is-white">Blog</a>
@@ -71,15 +71,6 @@ export default {
   width:50%
 }
 
-.container {
-  z-index:999;
-  text-align:center;
-}
-  .main-title {
-    color:#000;
-    z-index:999;
-  }
-
   #particles-js {
     background-size: cover;
     position: absolute;
@@ -95,6 +86,7 @@ export default {
   font-size: 50px;
   color: #35495e;
   letter-spacing: 1px;
+  word-spacing: 5px;
 }
 
 .subtitle {
