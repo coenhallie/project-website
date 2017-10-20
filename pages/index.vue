@@ -30,37 +30,36 @@
           </div>
         </div>
       </div>
-      <vue-particles
-        color="#e6ccff"
-        :particleOpacity="0.7"
-        :particlesNumber="80"
-        shapeType="circle"
-        :particleSize="6"
-        linesColor="#e6ccff"
-        :linesWidth="3"
-        :lineLinked="true"
-        :lineOpacity="0.4"
-        :linesDistance="150"
-        :moveSpeed="2"
-        :hoverEffect="true"
-        hoverMode="grab"
-        :clickEffect="true"
-        clickMode="push"
-      >
-      </vue-particles>
     </div>
+    <vue-particles
+      color="#e6ccff"
+      :particleOpacity="0.7"
+      :particlesNumber="80"
+      shapeType="circle"
+      :particleSize="6"
+      linesColor="#e6ccff"
+      :linesWidth="3"
+      :lineLinked="true"
+      :lineOpacity="0.4"
+      :linesDistance="150"
+      :moveSpeed="2"
+      :hoverEffect="true"
+      hoverMode="grab"
+      :clickEffect="true"
+      clickMode="push"
+    >
+    </vue-particles>
   </section>
 </template>
 
 <script>
-
 export default {
   components: {
   }
 }
 </script>
 
-<style scoped>
+<style>
 
 .home-text {
   background-color:#fff;
