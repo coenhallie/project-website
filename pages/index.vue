@@ -1,14 +1,14 @@
 <template>
   <section class="hero is-fullheight">
     <div class="hero-body">
-      <div class="home-text content">
+      <div class="home-text">
         <div class="home-content">
           <div class="has-text-right">
             <span class="icon is-large">
-            <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+              <a class="list-group-item" href="https://linkedin.com"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
             </span>
             <span class="icon is-large">
-            <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+            <a class="list-group-item" href="https://github.com/coenhallie"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
             </span>
           </div>
           <h1 class="title">
@@ -31,24 +31,26 @@
         </div>
       </div>
     </div>
-    <vue-particles
-      color="#e6ccff"
-      :particleOpacity="0.7"
-      :particlesNumber="80"
-      shapeType="circle"
-      :particleSize="6"
-      linesColor="#e6ccff"
-      :linesWidth="3"
-      :lineLinked="true"
-      :lineOpacity="0.4"
-      :linesDistance="150"
-      :moveSpeed="2"
-      :hoverEffect="true"
-      hoverMode="grab"
-      :clickEffect="true"
-      clickMode="push"
-    >
-    </vue-particles>
+    <no-ssr placeholder="Loading...">
+      <vue-particles
+        color="#e6ccff"
+        :particleOpacity="0.7"
+        :particlesNumber="80"
+        shapeType="circle"
+        :particleSize="6"
+        linesColor="#e6ccff"
+        :linesWidth="3"
+        :lineLinked="true"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="2"
+        :hoverEffect="true"
+        hoverMode="grab"
+        :clickEffect="true"
+        clickMode="push"
+      >
+      </vue-particles>
+    </no-ssr>
   </section>
 </template>
 
@@ -59,15 +61,22 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+  .no-ssr-placeholder {
+    color: #41b883;
+  }
+
+  .hero-body {
+  }
 
 .home-text {
   background-color:#fff;
   box-shadow: 0px 30px 40px rgba(0,0,0,.1);
   z-index:999;
-  margin:auto auto;
   padding:30px 20px 30px 20px;
-  width:50%
+  width:700px;
+  margin:auto auto;
 }
 
   #particles-js {
